@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>參加活動</title>
+</head>
+<body>
+  <p>正在跳轉到 LINE...</p>
+  <script>
+    // 你的 LIFF 活動連結
+    const liffUrl = "https://liff.line.me/2002225335-xvLQ3eml/luckydraw/FTZB6zH1jpWaFmzC";
+    // LINE Deep Link，使用你的帳號 ID @889ydqqv
+    const deepLink = "line://oaMessage/@889ydqqv/?參加活動:" + encodeURIComponent(liffUrl);
+    
+    // 嘗試喚起 LINE App
+    window.location.href = deepLink;
+    
+    // 若 2 秒後未成功跳轉（例如未安裝 LINE），改在瀏覽器打開 LIFF
+    setTimeout(() => {
+      window.location.href = liffUrl;
+    }, 2000);
+  </script>
+</body>
+</html>
