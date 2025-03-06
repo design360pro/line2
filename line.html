@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-  <title>參加活動</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加我LINE，開啟Python學習之旅</title>
+    <!-- 避免臉書快取舊頁面 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script>
+        // 頁面載入後立即跳轉到LINE deeplink
+        window.onload = function() {
+            window.location.href = "https://lin.ee/wdbYqcw";
+        };
+    </script>
 </head>
 <body>
-  <p>正在跳轉到 LINE...</p>
-  <script>
-    // 你的 LIFF 活動連結
-    const liffUrl = "https://liff.line.me/2002225335-xvLQ3eml/luckydraw/FTZB6zH1jpWaFmzC";
-    // LINE Deep Link，使用你的帳號 ID @889ydqqv
-    const deepLink = "line://oaMessage/@889ydqqv/?參加活動:" + encodeURIComponent(liffUrl);
-    
-    // 嘗試喚起 LINE App
-    window.location.href = deepLink;
-    
-    // 若 2 秒後未成功跳轉（例如未安裝 LINE），改在瀏覽器打開 LIFF
-    setTimeout(() => {
-      window.location.href = liffUrl;
-    }, 2000);
-  </script>
+    <!-- 如果跳轉失敗，顯示提示 -->
+    <h1>正在為您跳轉到LINE...</h1>
+    <p>如果沒有自動跳轉，請點擊<a href="https://lin.ee/wdbYqcw">這裡</a>手動加入我的LINE！</p>
 </body>
 </html>
